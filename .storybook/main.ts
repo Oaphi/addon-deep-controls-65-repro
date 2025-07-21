@@ -33,22 +33,14 @@ const config: StorybookConfig = {
       return plugin && "name" in plugin && plugin.name === vuePluginName;
     });
 
-    // copy config to avoid mutating the original
-    config = {
+    const originalPlugins = config.plugins ?? [];
+
+    return {
       ...config,
-      plugins: [...(config.plugins || [])],
-    };
-
-    if (existingVuePlugin) {
-      // move existing vue plugin to the end of the plugins array
-      config.plugins = config.plugins?.filter((p) => p !== existingVuePlugin) || [];
-      config.plugins.push(existingVuePlugin);
-    } else {
-      // add default vue plugin to the end of the plugins array
-      config.plugins?.push(defaultVuePlugin);
+      plugins: existingVuePlugin ?
+        [...originalPlugins.filter((p) => p !== existingVuePlugin), existingVuePlugin] :
+        [...originalPlugins, existingVuePlugin]
     }
-
-    return config;
   },
 };
 
