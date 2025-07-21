@@ -12,7 +12,7 @@
     "@types/node": "20.17.58",
     "@vitejs/plugin-vue": "5.2.4",
     "storybook": "9.0.16",
-    "storybook-addon-deep-controls": "0.9.4",
+    "storybook-addon-deep-controls": "0.9.5",
     "typescript": "5.8.3",
     "vue": "3.5.16",
     "vue-component-type-helpers": "2.2.10"

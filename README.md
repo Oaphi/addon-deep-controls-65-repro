@@ -14,7 +14,7 @@ Once the container is built and the service is up, connect to it & install the d
 
 ```shell
 npm run connect:bash
-npm ci --force # --force flag is needed due to an issue with @storybook/types versioning
+npm ci
 ```
 
 Once connected, start the Storybook in dev mode:
