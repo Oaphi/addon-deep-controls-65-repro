@@ -1,0 +1,25 @@
+.git
+
+# Specific directories
+node_modules
+dist
+
+# Editor directories and files
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.vscode
+trace
+
+# Build artifacts
+*.tsbuildinfo
+
+# Configuration files
+*storybook.log
+storybook-static
+
+build-storybook.log

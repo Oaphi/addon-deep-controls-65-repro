@@ -1,0 +1,20 @@
+{
+  "name": "addon-deep-controls-repro",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "connect:bash": "docker exec -it addon-deep-controls-repro bash",
+    "storybook:dev": "storybook dev --disable-telemetry --no-open --port 6007"
+  },
+  "devDependencies": {
+    "@storybook/vue3-vite": "9.0.16",
+    "@types/node": "20.17.58",
+    "@vitejs/plugin-vue": "5.2.4",
+    "storybook": "9.0.16",
+    "storybook-addon-deep-controls": "0.9.4",
+    "typescript": "5.8.3",
+    "vue": "3.5.16",
+    "vue-component-type-helpers": "2.2.10"
+  }
+}

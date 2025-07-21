@@ -1,0 +1,11 @@
+services:
+  storybook:
+    container_name: addon-deep-controls-repro
+    user: 1000:1000
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 6007:6007
+    volumes:
+      - ./:/app
